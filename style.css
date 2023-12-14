@@ -1,0 +1,82 @@
+html{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: larger;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+body {
+    margin: 10;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+body.day-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.night-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.toggle-img {
+    max-width: 30px; 
+
+    height: auto; 
+        
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.contact-section h2 {
+    text-decoration: none;
+}
+
+
+a {
+    color: #005266; 
+}
+
+a:hover {
+    animation: colorChange 1.5s infinite;
+}
+
+@keyframes colorChange {
+    0%, 100% { color: #005266; }  
+    50% { color: #00aaff; }        
+}
+
+a.night-mode {
+     color: #00aaff;
+}
+
+a.night-mode:hover {
+    animation: colorChangeNightMode 1.5s infinite;
+}
+
+@keyframes colorChangeNightMode {
+    0%, 100% { color: #00aaff; }  
+    50% { color: #005266; }        
+}
+
